@@ -1,0 +1,10 @@
+REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
+etoosamoe/ubuntu-tmp-file   latest              10cb5e263901        29 seconds ago      64.2MB
+ubuntu                      18.04               6526a1858e5d        11 days ago         64.2MB
+docker/getting-started      latest              1f32459ef038        6 weeks ago         26.8MB
+hello-world                 latest              bf756fb1ae65        8 months ago        13.3kB
+
+
+Контейнер создается из образа
+На контейнер можно повесить различные дополнительные настройки, к примеру сеть.
+К тому же, у контейнера есть state, mounts, etc...
