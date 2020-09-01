@@ -8,3 +8,4 @@
         image: etosamoe/otus-reddit:1.0
         ports: [ "9292:9292" ]
         state: started
+        
