@@ -36,4 +36,3 @@
     - name: Install docker SDK module
       pip:
         name: docker
-        
