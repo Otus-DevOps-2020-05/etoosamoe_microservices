@@ -44,3 +44,13 @@ docker run -d --network=reddit --network-alias=post etosamoe/post:1.0
 docker run -d --network=reddit --network-alias=comment etosamoe/comment:1.0
 docker run -d --network=reddit -p 9292:9292 etosamoe/ui:2.0
 ```
+
+# ДЗ docker-4
+
+
+Сегодня покрутил сети в докере.
+Закидывал контейнеры в разные сети, изолировал их друг от друга.
+
+Поменять имя: опция  ``-p`` или ``--project-name NAME`` или переменной окружения ``COMPOSE_PROJECT_NAME``
+
+Чтобы компоуз заработал, пришлось сделать такую штуку: ``export COMPOSE_TLS_VERSION=TLSv1_2``
