@@ -1,6 +1,6 @@
 
 USERNAME = etosamoe
-VPATH = docker/src:monitoring
+VPATH = src:monitoring
 
 build: build_ui build_comment build_post build_prometheus
 build_ui: ui
