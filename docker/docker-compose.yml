@@ -10,20 +10,20 @@ services:
           - post_db
           - comment_db
   ui:
-    build: ./src/ui
+    build: ../src/ui
     image: ${USERNAME}/ui:${UI_VERSION}
     ports:
       - ${UI_PIBLIC_PORT}:9292/tcp
     networks:
       - front_net
   post:
-    build: ./src/post-py
+    build: ../src/post-py
     image: ${USERNAME}/post:1.0
     networks:
       - back_net
       - front_net
   comment:
-    build: ./src/comment
+    build: ../src/comment
     image: ${USERNAME}/comment:1.0
     networks:
       - back_net
