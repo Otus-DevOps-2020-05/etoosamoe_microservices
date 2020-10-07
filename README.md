@@ -85,4 +85,28 @@ docker run -d --network=reddit -p 9292:9292 etosamoe/ui:2.0
 - Установил ЕФК
 - Поставил Зипкин
 - Посмотрел как собираются логи в Еластике, как собираются трейсы в Зипкине
-- Перелопатил докер-компоузы
+- Перелопатил докер-компоуз
+
+
+# Kubernetes-1
+
+Итак, я прошел хард-вей в яндексе. Это долго, муторно, много сертификатов, конфигов..
+
+Результат в папке ``the_hard_way`` и вывод:
+```
+ yadmin î° kubernetes/reddit î° î  kubernetes-1 î° kubectl apply -f comment-deployment.yml                        deployment.apps/comment-deployment created
+ yadmin î° kubernetes/reddit î° î  kubernetes-1 î° kubectl apply -f ui-deployment.yml
+deployment.apps/ui-deployment created
+ yadmin î° kubernetes/reddit î° î  kubernetes-1 î° kubectl apply -f mongo-deployment.yml
+deployment.apps/mongo-deployment created
+ yadmin î° kubernetes/reddit î° î  kubernetes-1 î° kubectl apply -f post-deployment.yml
+deployment.apps/post-deployment created
+ yadmin î° kubernetes/reddit î° î  kubernetes-1 î° kubectl get pods
+NAME                                 READY   STATUS    RESTARTS   AGE
+busybox                              1/1     Running   0          12m
+comment-deployment-d56c85c46-m4krv   1/1     Running   0          2m6s
+mongo-deployment-86d49445c4-z7njj    1/1     Running   0          111s
+nginx-554b9c67f9-jms9q               1/1     Running   0          6m19s
+post-deployment-5b5cdd78f5-8zq54     1/1     Running   0          105s
+ui-deployment-69b4467cf8-mdsfj       1/1     Running   0          119s
+```
