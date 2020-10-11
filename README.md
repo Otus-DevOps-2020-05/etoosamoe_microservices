@@ -110,3 +110,13 @@ nginx-554b9c67f9-jms9q               1/1     Running   0          6m19s
 post-deployment-5b5cdd78f5-8zq54     1/1     Running   0          105s
 ui-deployment-69b4467cf8-mdsfj       1/1     Running   0          119s
 ```
+
+# Kubernetes-2
+
+Я развернул наше reddit-приложение сначала в локальном кубернетесе, затем в Яндексе.
+Помучился с post-db.
+Вроде разобрался с пробросами портов.
+Поработал с неймспейсами.
+Поставил очень удобный дашборд для Кубера.
+
+![](kubernetes/reddit/yc-k8s.jpg)
